@@ -9,21 +9,21 @@ from flask_api import status
 class TestServer(unittest.TestCase):
     """ Server Test """
 
-
     def setUp(self):
         """ Runs before each test """
         self.app = app.test_client()
-
 
     def tearDown(self):
         """ Runs after each test """
         pass
 
-    def setUpClass(self):
+    @classmethod
+    def setUpClass(cls):
         """ Runs before any test in class runs """
         pass
 
-    def tearDownClass(self):
+    @classmethod
+    def tearDownClass(cls):
         """ Runs after all test in class runs """
         pass
 

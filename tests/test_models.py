@@ -18,10 +18,12 @@ class TestModels(unittest.TestCase):
         """ Runs after each test """
         pass
 
-    def setUpClass(self):
+    @classmethod
+    def setUpClass(cls):
         """ Runs before any test in class runs """
         pass
 
-    def tearDownClass(self):
+    @classmethod
+    def tearDownClass(cls):
         """ Runs after all test in class runs """
         pass
